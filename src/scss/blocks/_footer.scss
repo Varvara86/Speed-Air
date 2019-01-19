@@ -1,0 +1,10 @@
+.footer {
+    background-color: $color-primary;
+    &__nav {
+        font-family: $font-secondary;
+        font-size: $font-size-secondary;
+        color: white;
+        padding-top: 70px;
+
+    }
+}

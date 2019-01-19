@@ -1,0 +1,35 @@
+/* GRID */
+$container-width: 1140px;
+
+
+// MEDIA
+$xlarge: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 568px;
+
+/* GRID */
+$container-width-xlarge: 1140px;
+$container-width-large: 960px;
+$container-width-medium: 720px;
+$container-width-small: 540px;
+$gutter: 30px;
+$num-cols: 12;
+
+// COLORS
+$color-primary: #172957;
+$color-secondary: #FFAB2E;
+$color-tertiary: #F2F2F2;
+$color-white: #FFF;
+$color-back: #000;
+
+// TYPOGRAPHY
+$font-secondary: 'Roboto', sans-serif;
+$font-primary: 'Open Sans', sans-serif;
+$font-logo: 'Faster One', cursive;
+$font-size-secondary: 14;
+$font-logo-sm: 24;
+$font-logo: 30;
+
+// TRANSITION
+$timing: .2s;
