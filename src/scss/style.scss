@@ -1,4 +1,6 @@
+@import '_normalize.scss';
+@import './bootstrap-4.2.1/scss/bootstrap.scss';
 @import '_variables.scss';
 @import '_global.scss';
 @import '_utilities.scss';
-@import '_main.scss';
+@import './blocks/_blocks.scss';
