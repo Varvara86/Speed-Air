@@ -1,0 +1,26 @@
+.header {
+    padding-top: 20px;
+
+    .logo {
+        img {
+            width: 170px;
+            height: 32px;
+        }
+    }
+    .call {
+        // display: flex;
+
+        &__p {
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+        }
+        &__nomber {
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+        }
+    }
+}

@@ -5,8 +5,9 @@ header.header
                 .d-flex.justify-content-between
                     .logo
                         img(src="./images/speed air.svg", alt="")
-                    .call
-                        p.call__number Call to book  +44 203 499 8517
+                    .call.d-flex
+                        p.call__p Call to book
+                        a.call__nomber(href="tel:+44 203 499 8517")
         .row
             .col.col-12
                 ul.nav.justify-content-end
@@ -25,8 +26,12 @@ header.header
                     li.nav-item.dropdown
                         a.nav-link.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") En
                         .dropdown-menu.dropdown-menu-right
-                            a.dropdown-item(href="#") Rus
-                            a.dropdown-item(href="#") Ukr
+                            a.dropdown-item(href="#")
+                                img(src="../images/Russia.png", alt="")
+                                p Rus
+                            a.dropdown-item(href="#")
+                                img(src="../images/Ukraine.png", alt="")
+                                p Ukr
                     li.nav-item.dropdown
                         a.nav-link.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") USD
                         .dropdown-menu.dropdown-menu-right

@@ -1,10 +1,83 @@
 .footer {
     background-color: $color-primary;
     &__nav {
-        font-family: $font-secondary;
-        font-size: $font-size-secondary;
-        color: white;
         padding-top: 70px;
+        padding-bottom: 34px;
+        // font-size: 14px;
 
+        .nav-item {
+            a {
+                font-family: $font-secondary;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__card {
+        .nav__head {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: $font-secondary;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 14px 0;
+            margin-left: 15px;
+        }
+        .nav-item {
+            a {
+                font-family: $font-secondary;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        margin: 0 15px;
+        color: white;
+
+        p {
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .mobile {
+            i {
+                margin-left: 30px;
+                font-size: 20px;
+                transition: all 500ms;
+            }
+            i:hover {
+                color: $color-primary;
+                padding: 11px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+        .social {
+            i {
+                // margin-top: 4px;
+                margin-left: 25px;
+                padding: 11px;
+                // font-size: 12px;
+                color: $color-primary;
+                background-color: white;
+                border-radius: 50%;
+                transition: all 500ms;
+            }
+            i:hover {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 25%;
+            }
+        }
+    }
+    &__rights {
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
     }
 }

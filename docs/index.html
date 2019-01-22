@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Speed Air</title><link href="https://fonts.googleapis.com/css?family=Faster+One|Open+Sans:300,400,700,800|Roboto:300,400,700,900" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
   <body>
@@ -16,8 +15,8 @@
           <div class="col col-12">
             <div class="d-flex justify-content-between">
               <div class="logo"><img src="./images/speed air.svg" alt=""/></div>
-              <div class="call">
-                <p class="call__number">Call to book  +44 203 499 8517</p>
+              <div class="call d-flex">
+                <p class="call__p">Call to book</p><a class="call__nomber" href="tel:+44 203 499 8517"></a>
               </div>
             </div>
           </div>
@@ -33,7 +32,9 @@
               <li class="nav-item"><a class="nav-link" href="#">My lists</a></li>
               <li class="nav-item"><a class="nav-link" href="#">My trips</a></li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">En</a>
-                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Rus</a><a class="dropdown-item" href="#">Ukr</a></div>
+                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><img src="../images/Russia.png" alt=""/>
+                    <p>Rus</p></a><a class="dropdown-item" href="#"><img src="../images/Ukraine.png" alt=""/>
+                    <p>Ukr</p></a></div>
               </li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">USD</a>
                 <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">RUB</a><a class="dropdown-item" href="#">UAH</a></div>
@@ -43,7 +44,6 @@
         </div>
       </div>
     </header>
-    <main>main</main>
     <div class="travel_deals">
       <div class="container">
         <div class="row">
@@ -54,7 +54,7 @@
         <div class="row">
           <div class="col col-5">
             <p class="offers">Enter E-mail and we’ll send you best offers</p>
-            <div class="d-flex justify-content-between">
+            <div class="mail_discrip">
               <p>Airline discounts</p>
               <div class="circle"></div>
               <p>The best prices</p>
@@ -68,7 +68,7 @@
               </div>
               <button class="btn btn-primary mx-sm-3 mb-2" type="submit">Send</button>
             </form>
-            <p>Your privacy is important to us, so we'll never spam you or share your info with third parties. Take a look at our privacy policy. And, we'd be sad to see you go, but you can unsubscribe at any time.</p>
+            <p class="privacy">Your privacy is important to us, so we'll never spam you or share your info with third parties. Take a look at our privacy policy. And, we'd be sad to see you go, but you can unsubscribe at any time.</p>
           </div>
         </div>
       </div>
@@ -90,9 +90,9 @@
         <hr/>
         <div class="row">
           <div class="col col-10 offset-1">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between footer__card">
               <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#">Most popular</a></li>
+                <p class="nav__head">Most popular</p>
                 <li class="nav-item"><a class="nav-link" href="#">Countries</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Regions</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Cities</a></li>
@@ -100,7 +100,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Places of interest</a></li>
               </ul>
               <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#">Special offers</a></li>
+                <p class="nav__head">Special offers</p>
                 <li class="nav-item"><a class="nav-link" href="#">Holiday rentals</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Order child support</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Food</a></li>
@@ -108,7 +108,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Freight transportation</a></li>
               </ul>
               <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                <p class="nav__head">About us</p>
                 <li class="nav-item"><a class="nav-link" href="#">Who we are</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">General conditions</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Privacy policy</a></li>
@@ -116,7 +116,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Press area</a></li>
               </ul>
               <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="#">Useful information</a></li>
+                <p class="nav__head">Useful information</p>
                 <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Airline information</a></li>
@@ -128,7 +128,7 @@
         </div>
         <div class="row">
           <div class="col col-10 offset-1">
-            <div class="d-flex justify-content-between">
+            <div class="footer__info">
               <div class="mobile d-flex">
                 <p>Download mobile app</p><i class="fab fa-apple"></i><i class="fab fa-android"></i><i class="fab fa-windows"></i>
               </div>
@@ -141,7 +141,7 @@
         <hr/>
         <div class="row">
           <div class="col col-12">
-            <p>&#169; 2018 speed air of Harrogate Ltd. All Rights Reserved.</p>
+            <p class="footer__rights">&#169; 2018 speed air of Harrogate Ltd. All Rights Reserved.</p>
           </div>
         </div>
       </div>
