@@ -42,11 +42,28 @@
         }
     }
 
-    .form-inline {
+    .mail_form {
         padding-top: 10px;
+        padding-bottom: 5px;
 
-        .form-group {
-            
+        input {
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            width: 265px;
+            margin-right: $gutter;
+        }
+
+        &__btn {
+            font-family: $font-secondary;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            background-color: $color-secondary;
+            border: none;
+            border-radius: 3px;
+            padding: 9px 52px;
+            cursor: pointer;
         }
     }
 
