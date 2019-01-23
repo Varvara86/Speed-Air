@@ -1,26 +1,64 @@
 .header {
     padding-top: 20px;
 
-    .logo {
+    &__logo {
+        display: block;
+        text-align: left;
+        padding-top: 5px;
+        
         img {
-            width: 170px;
-            height: 32px;
+            width: 171px;
         }
     }
-    .call {
-        // display: flex;
+        
+    &__call {
+        display: flex;
+        margin-left: 38px;
 
-        &__p {
+        p {
             font-family: $font-secondary;
             font-size: 16px;
             font-weight: 400;
             color: white;
         }
-        &__nomber {
+        a {
             font-family: $font-secondary;
             font-size: 16px;
             font-weight: 400;
             color: white;
+            margin-left: 11px;
+            text-decoration: none;
+            transition: all 500ms;
+
+        }
+        a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }    
+    }
+
+    .nav {
+        padding-top: 5px;
+
+
+        &-item {
+            padding-left: 34px;
+
+            p {
+                margin: 0;
+            }
+
+            img {
+                width: 18px;
+                height: 12px;
+                margin-right: 7px;
+            }
+
+            .dropdown-toggle, .lang {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

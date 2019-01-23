@@ -1,18 +1,18 @@
 header.header
     .container
         .row
-            .col.col-12
-                .d-flex.justify-content-between
-                    .logo
-                        img(src="./images/speed air.svg", alt="")
-                    .call.d-flex
-                        p.call__p Call to book
-                        a.call__nomber(href="tel:+44 203 499 8517")
+            .col.col-3
+                .header__logo
+                    img(src="./images/speed air.svg", alt="")
+            .col.col-3.offset-6
+                .header__call
+                    p Call to book
+                    a(href="tel:+44 203 499 8517") +44 203 499 8517
         .row
-            .col.col-12
+            .col.col-6.offset-6
                 ul.nav.justify-content-end
                     li.nav-item.dropdown
-                        a.nav-link.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") Account
+                        a.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") Account
                         .dropdown-menu
                             a.dropdown-item(href="#") Sing in
                             a.dropdown-item(href="#") Sing up
@@ -20,20 +20,22 @@ header.header
                             a.dropdown-item(href="#") Business
                             a.dropdown-item(href="#") Company
                     li.nav-item
-                        a.nav-link(href="#") My lists
+                        a(href="#") My lists
                     li.nav-item
-                        a.nav-link(href="#") My trips
+                        a(href="#") My trips
                     li.nav-item.dropdown
-                        a.nav-link.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") En
+                        a.dropdown-toggle.lang(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+                            img(src="./images/united-states.png", alt="")
+                            p En
                         .dropdown-menu.dropdown-menu-right
-                            a.dropdown-item(href="#")
-                                img(src="../images/Russia.png", alt="")
+                            a.dropdown-item.lang(href="#")
+                                img(src="./images/Russia.png", alt="")
                                 p Rus
-                            a.dropdown-item(href="#")
-                                img(src="../images/Ukraine.png", alt="")
+                            a.dropdown-item.lang(href="#")
+                                img(src="./images/Ukraine.png", alt="")
                                 p Ukr
                     li.nav-item.dropdown
-                        a.nav-link.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") USD
+                        a.dropdown-toggle(data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false") USD
                         .dropdown-menu.dropdown-menu-right
                             a.dropdown-item(href="#") RUB
                             a.dropdown-item(href="#") UAH

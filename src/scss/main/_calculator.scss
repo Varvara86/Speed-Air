@@ -1,0 +1,20 @@
+.calculator {
+    .bunner {
+        padding-top: 54px;
+        padding-bottom: 42px;
+        font-family: $font-primary;
+        font-size: 42px;
+        font-weight: 300;
+        color: white;
+    }
+    .tickets {
+
+        &__category {
+            display: flex;
+            font-family: $font-secondary;
+            font-size: $font-size-secondary;
+            font-weight: 400;
+            color: white;
+        }
+    }
+}

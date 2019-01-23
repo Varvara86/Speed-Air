@@ -12,31 +12,32 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col col-12">
-            <div class="d-flex justify-content-between">
-              <div class="logo"><img src="./images/speed air.svg" alt=""/></div>
-              <div class="call d-flex">
-                <p class="call__p">Call to book</p><a class="call__nomber" href="tel:+44 203 499 8517"></a>
-              </div>
+          <div class="col col-3">
+            <div class="header__logo"><img src="./images/speed air.svg" alt=""/></div>
+          </div>
+          <div class="col col-3 offset-6">
+            <div class="header__call">
+              <p>Call to book</p><a href="tel:+44 203 499 8517">+44 203 499 8517</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col col-12">
+          <div class="col col-6 offset-6">
             <ul class="nav justify-content-end">
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
+              <li class="nav-item dropdown"><a class="dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
                 <div class="dropdown-menu"><a class="dropdown-item" href="#">Sing in</a><a class="dropdown-item" href="#">Sing up</a>
                   <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Business</a><a class="dropdown-item" href="#">Company</a>
                 </div>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">My lists</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">My trips</a></li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">En</a>
-                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><img src="../images/Russia.png" alt=""/>
-                    <p>Rus</p></a><a class="dropdown-item" href="#"><img src="../images/Ukraine.png" alt=""/>
+              <li class="nav-item"><a href="#">My lists</a></li>
+              <li class="nav-item"><a href="#">My trips</a></li>
+              <li class="nav-item dropdown"><a class="dropdown-toggle lang" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="./images/united-states.png" alt=""/>
+                  <p>En</p></a>
+                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item lang" href="#"><img src="./images/Russia.png" alt=""/>
+                    <p>Rus</p></a><a class="dropdown-item lang" href="#"><img src="./images/Ukraine.png" alt=""/>
                     <p>Ukr</p></a></div>
               </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">USD</a>
+              <li class="nav-item dropdown"><a class="dropdown-toggle" data-toggle="dropdown" data-display="static" href="#" role="button" aria-haspopup="true" aria-expanded="false">USD</a>
                 <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">RUB</a><a class="dropdown-item" href="#">UAH</a></div>
               </li>
             </ul>
@@ -44,6 +45,48 @@
         </div>
       </div>
     </header>
+    <div class="calculator">
+      <div class="container">
+        <div class="row">
+          <div class="col col-10 offset-1">
+            <p class="bunner">Best prices and comfort for you</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1">
+            <div class="tickets">
+              <div class="tickets__category">
+                <p>Tourist</p>
+                <p>Business</p>
+                <p>Company</p>
+              </div>
+              <div class="tickets__search">
+                <div class="row">
+                  <div class="col col-4">
+                    <input type="text" id="dynamic-label-input" placeholder="Enter some text"/>
+                    <label for="dynamic-label-input">Enter some text</label>
+                  </div>
+                  <div class="col col-4">
+                    <input type="text" id="dynamic-label-input" placeholder="Enter some text"/>
+                    <label for="dynamic-label-input">Enter some text</label>
+                  </div>
+                  <div class="col col-2"><form>
+                    <p>Choose date: </p>
+                    <input type="date" name="calendar" value="2012-06-01" max="2012-06-04" min="2012-05-29"/>
+                    <input type="submit" value="Отправить"/>
+                  </div>
+                  <div class="col col-2"><form>
+                    <p>Choose date: </p>
+                    <input type="date" name="calendar" value="2012-06-01" max="2012-06-04" min="2012-05-29"/>
+                    <input type="submit" value="Отправить"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="travel_deals">
       <div class="container">
         <div class="row">
@@ -126,11 +169,11 @@
         <div class="row">
           <div class="col col-10 offset-1">
             <div class="footer__info">
-              <div class="mobile d-flex">
-                <p>Download mobile app</p><i class="fab fa-apple"></i><i class="fab fa-android"></i><i class="fab fa-windows"></i>
+              <div class="mobile d-flex align-items-center">
+                <p>Download mobile app</p><a href="http://"><i class="fab fa-apple"></i></a><a href="http://"><i class="fab fa-android"></i></a><a href="http://"><i class="fab fa-windows"></i></a>
               </div>
-              <div class="social d-flex">
-                <p>Look for us</p><i class="fab fa-viber"></i><i class="fab fa-instagram"></i><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i>
+              <div class="social d-flex align-items-center">
+                <p>Look for us</p><a href="http://"><i class="fab fa-viber"></i></a><a href="http://"><i class="fab fa-instagram"></i></a><a href="http://"><i class="fab fa-facebook-f"></i></a><a href="http://"><i class="fab fa-twitter"></i></a>
               </div>
             </div>
           </div>
