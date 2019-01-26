@@ -54,34 +54,47 @@
         </div>
         <div class="row">
           <div class="col col-10 offset-1">
-            <div class="tickets">
-              <div class="tickets__category">
-                <p>Tourist</p>
-                <p>Business</p>
-                <p>Company</p>
-              </div>
-              <div class="tickets__search">
-                <div class="row">
-                  <div class="col col-4">
-                    <input type="text" id="dynamic-label-input" placeholder="Enter some text"/>
-                    <label for="dynamic-label-input">Enter some text</label>
-                  </div>
-                  <div class="col col-4">
-                    <input type="text" id="dynamic-label-input" placeholder="Enter some text"/>
-                    <label for="dynamic-label-input">Enter some text</label>
-                  </div>
-                  <div class="col col-2"><form>
-                    <p>Choose date: </p>
-                    <input type="date" name="calendar" value="2012-06-01" max="2012-06-04" min="2012-05-29"/>
-                    <input type="submit" value="Отправить"/>
-                  </div>
-                  <div class="col col-2"><form>
-                    <p>Choose date: </p>
-                    <input type="date" name="calendar" value="2012-06-01" max="2012-06-04" min="2012-05-29"/>
-                    <input type="submit" value="Отправить"/>
-                  </div>
+            <div class="category"><a class="active" href="http://">Tourist</a><a href="http://">Business</a><a href="http://">Company</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1">
+            <div class="search_form">
+              <form>
+                <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
+                <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
+                <input class="calendar" type="date" name="calendar" value="2012-06-01"/>
+                <input class="calendar" type="date" name="calendar" value="2012-06-01"/>
+                <button class="search_form__options active">
+                  <div class="img"><img src="./images/002-plane.svg" alt=""/></div>
+                  <p>Flight only</p>
+                </button>
+                <button class="search_form__options">
+                  <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/></div>
+                  <p>Flight+Hotel</p>
+                </button>
+                <button class="search_form__options">
+                  <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
+                  <p>Flight+Car</p>
+                </button>
+                <button class="search_form__options">
+                  <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
+                  <p>Flight+Hotel+Car</p>
+                </button>
+                <button class="search_form__go">
+                  <p>Search</p><img class="arrow" src="./images/arrow.svg" alt=""/>
+                </button>
+                <div class="search_form__results">
+                  <p>108 results</p>
                 </div>
-              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1">
+            <div class="advanced_options">
+              <p>Advanced options</p><img class="arrow" src="./images/arrow.svg" alt=""/>
             </div>
           </div>
         </div>

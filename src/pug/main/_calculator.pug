@@ -5,26 +5,49 @@
                 p.bunner Best prices and comfort for you
         .row
            .col.col-10.offset-1
-                .tickets
-                    .tickets__category
-                        p Tourist
-                        p Business
-                        p Company
-                    .tickets__search
-                        .row
-                            .col.col-4
-                                input(type="text" id="dynamic-label-input" placeholder="Enter some text")
-                                label(for="dynamic-label-input") Enter some text
-                            .col.col-4
-                                input(type="text" id="dynamic-label-input" placeholder="Enter some text")
-                                label(for="dynamic-label-input") Enter some text
-                            .col.col-2
-                                <form>
-                                    p Choose date: 
-                                    input(type="date" name="calendar" value="2012-06-01" max="2012-06-04" min="2012-05-29")
-                                    input(type="submit" value="Отправить")
-                            .col.col-2
-                                <form>
-                                    p Choose date: 
-                                    input(type="date" name="calendar" value="2012-06-01" max="2012-06-04" min="2012-05-29")
-                                    input(type="submit" value="Отправить")
+                .category
+                    a.active(href="http://") Tourist
+                    a(href="http://") Business
+                    a(href="http://") Company
+        .row
+            .col.col-10.offset-1
+                .search_form
+                    form
+                        input.city(type="text" id="dynamic-label-input" placeholder="Enter some text")
+                        //- label(for="dynamic-label-input") Enter some text
+                        
+                        input.city(type="text" id="dynamic-label-input" placeholder="Enter some text")
+                        //- label(for="dynamic-label-input") Enter some text
+                        input.calendar(type="date" name="calendar" value="2012-06-01")
+                        input.calendar(type="date" name="calendar" value="2012-06-01")
+                    
+                        button.search_form__options.active
+                            .img
+                                img(src="./images/002-plane.svg", alt="")
+                            p Flight only
+                        button.search_form__options
+                            .img
+                                img(src="./images/002-plane.svg", alt="")
+                                img(src="./images/003-hotel.svg", alt="")
+                            p Flight+Hotel
+                        button.search_form__options
+                            .img
+                                img(src="./images/002-plane.svg", alt="")
+                                img(src="./images/001-car.svg", alt="")
+                            p Flight+Car
+                        button.search_form__options
+                            .img
+                                img(src="./images/002-plane.svg", alt="")
+                                img(src="./images/003-hotel.svg", alt="")
+                                img(src="./images/001-car.svg", alt="")
+                            p Flight+Hotel+Car
+                        button.search_form__go
+                            p Search
+                            img.arrow(src="./images/arrow.svg", alt="")
+                        .search_form__results
+                            p 108 results
+        .row
+            .col.col-10.offset-1
+                .advanced_options
+                    p Advanced options
+                    img.arrow(src="./images/arrow.svg", alt="")

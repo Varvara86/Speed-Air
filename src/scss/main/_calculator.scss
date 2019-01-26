@@ -1,20 +1,166 @@
 .calculator {
     .bunner {
-        padding-top: 54px;
-        padding-bottom: 42px;
+        padding-top: 56px;
+        padding-bottom: 22px;
         font-family: $font-primary;
-        font-size: 42px;
+        font-size: 40px;
         font-weight: 300;
         color: white;
     }
-    .tickets {
+ 
+    .category {
+        display: flex;
+        font-family: $font-secondary;
+        font-size: $font-size-secondary;
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
 
-        &__category {
-            display: flex;
-            font-family: $font-secondary;
-            font-size: $font-size-secondary;
-            font-weight: 400;
+        a {
+            margin: 0 14px;
             color: white;
+            text-decoration: none;
+            position: relative;
+            padding: 16px 16px 10px 16px;
+                
         }
+        a:after {
+            position: absolute;
+            bottom: 0;
+            left: -7px;
+            width: 120%;
+            height: 2px;
+            background-color: #fa832e;
+            display: block;
+            content: '';
+            opacity: 0;
+            transform: translateX(40px);
+            transition: .3s;
+        }
+        a:hover {
+            color: #007bff;
+        }
+        .active:after, a:hover:after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .search_form {
+        display: flex; 
+        padding: 30px 20px;
+        font-family: $font-secondary;
+        font-weight: 400;
+        color: white;
+        background-color: $color-primary;
+        opacity: 0.8;
+
+        form {
+            justify-content: space-between;
+            align-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+
+            
+            input {
+                height: 62px;
+                border-radius: 3px;
+                border: none;
+            }
+            .calendar {
+                display: flex;
+                background-color: #172957;
+            }    
+            .city {
+                width: 258px;
+            }     
+        }
+        
+        &__options {
+            border: 1px solid rgba(189, 189, 189, 0.3);
+            border-radius: 4px;
+            background-color: $color-primary;
+            opacity: 0.8;
+            font-size: $font-size-secondary;
+            padding: 8px 11px;
+            margin-top: 20px;
+
+            .img {
+                padding-bottom: 5px;
+                justify-content: space-between;
+            }
+                
+            img, p {
+                opacity: 0.5;
+                justify-content: center;
+                margin: 0;
+                color: white;
+                padding: 0 10px;
+            }
+        }
+        .active {
+            border: 1px solid white;
+            opacity: 1;
+
+            img, p {
+                opacity: 1;
+            }
+        }
+        &__go {
+            display: flex;
+            background-color: $color-secondary;
+            font-size: 20px;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 38px;
+            margin-top: 20px;
+            width: 165px;
+            transition: all 500ms;
+                
+            p {
+                align-items: center;
+                margin: 0;
+        }
+        &:hover {
+            background-color: #ffa010;
+            padding: 0 25px;
+        }
+    }
+
+        &__results {
+            width: 165px;
+            text-align: center;
+            margin-top: 38px;
+        }
+    }
+    
+    .advanced_options {
+        display: flex;
+        padding-top: 15px;
+        align-items: center;
+        margin-bottom: 190px;
+        cursor: pointer;
+        transition: all 500ms;
+        color: white;
+
+        p {
+            font-family: $font-secondary;
+            font-weight: 400;
+            font-size: 16px;
+            // color: white;
+            margin: 0;
+            padding: 0 18px;
+        }
+        img {
+            transform: rotate(90deg)
+        }
+    }
+    .advanced_options:hover {
+        color: #007bff;
+        border-bottom: 1px solid #fa832e;
+        width: 190px;
     }
 }
