@@ -33,3 +33,16 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  var swiper = new Swiper('.swiper-container-2', {
+    spaceBetween: 30,
+    effect: 'fade',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+  });
+ 
