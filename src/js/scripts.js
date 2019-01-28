@@ -1,4 +1,5 @@
 var swiper = new Swiper('.swiper-container', {
+    loop: true,
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -12,9 +13,10 @@ var swiper = new Swiper('.swiper-container', {
     },
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
     },
   });
 
