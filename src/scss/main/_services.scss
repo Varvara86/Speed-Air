@@ -1,5 +1,5 @@
 .services {
-    padding-bottom: 75px;
+    padding-bottom: 140px;
 
     .title {
         z-index: -100;
@@ -27,6 +27,7 @@
         text-align: center;
         font-size: 18px;
         height: 100%;
+        transition: 0.5s linear;
 
             img {
                 width: 360px;
@@ -52,6 +53,14 @@
                     font-weight: 400;
                     color: #ffffff;
                 }
+            }
+        }
+        .swiper-slide:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            
+            img {
+                box-shadow: 0 0 15px #172957;
             }
         }
 

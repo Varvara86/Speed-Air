@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Speed Air</title><link href="https://fonts.googleapis.com/css?family=Faster+One|Open+Sans:300,400,700,800|Roboto:300,400,700,900" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css"/>
     <link href="./css/swiper.css" rel="stylesheet"/>
     <link href="./css/swiper.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
@@ -15,7 +17,7 @@
       <div class="container">
         <div class="row">
           <div class="col col-3">
-            <div class="header__logo"><img src="./images/speed air.svg" alt=""/></div>
+            <div class="logo animated rollIn header__logo"><a href="javascript:void(0)"><img src="./images/speed air.svg" alt=""/></a></div>
           </div>
           <div class="col col-3 offset-6">
             <div class="header__call">
@@ -51,52 +53,99 @@
       <div class="container">
         <div class="row">
           <div class="col col-10 offset-1">
-            <p class="bunner">Best prices and comfort for you</p>
+            <div class="swiper-container-0">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p>Best prices and comfort for you</p>
+                </div>
+                <div class="swiper-slide">
+                  <p>A lot of interesting offers</p>
+                </div>
+                <div class="swiper-slide">
+                  <p>Regular promotions and discounts</p>
+                </div>
+                <div class="swiper-slide">
+                  <p>Everything you wish is here!</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col col-10 offset-1">
-            <div class="category"><a class="active" href="http://">Tourist</a><a href="http://">Business</a><a href="http://">Company</a></div>
+            <div class="tabs">
+              <ul class="tabs__caption">
+                <li class="active">Tourist</li>
+                <li>Business</li>
+                <li>Company</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col col-10 offset-1">
-            <div class="search_form">
-              <form>
-                <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
-                <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
-                <input class="calendar" type="date" name="calendar" value="2012-06-01"/>
-                <input class="calendar" type="date" name="calendar" value="2012-06-01"/>
-                <button class="search_form__options active">
+            <div class="tabs__content active">
+              <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
+              <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
+              <input class="calendar" type="text" id="datepicker"/>
+              <input class="calendar" type="text" id="datepicker-1"/>
+              <div class="options">
+                <button class="active">
                   <div class="img"><img src="./images/002-plane.svg" alt=""/></div>
                   <p>Flight only</p>
                 </button>
-                <button class="search_form__options">
+                <button>
                   <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/></div>
                   <p>Flight+Hotel</p>
                 </button>
-                <button class="search_form__options">
+                <button>
                   <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
                   <p>Flight+Car</p>
                 </button>
-                <button class="search_form__options">
+                <button>
                   <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
                   <p>Flight+Hotel+Car</p>
                 </button>
-                <button class="search_form__go">
-                  <p>Search</p><img class="arrow" src="./images/arrow.svg" alt=""/>
-                </button>
-                <div class="search_form__results">
-                  <p>108 results</p>
-                </div>
-              </form>
+              </div>
+              <button class="go">
+                <p>Search</p><img class="arrow" src="./images/arrow.svg" alt=""/>
+              </button>
+              <div class="results">
+                <p>108 results</p>
+              </div>
             </div>
+            <div class="tabs__content"></div>
+            <div class="tabs__content"></div>
           </div>
         </div>
         <div class="row">
           <div class="col col-10 offset-1">
             <div class="advanced_options">
               <p>Advanced options</p><img class="arrow" src="./images/arrow.svg" alt=""/>
+            </div>
+            <div class="advanced_options__show">
+              <button class="options active">
+                <div class="img"><img src="./images/002-plane.svg" alt=""/></div>
+                <p>Flight only</p>
+              </button>
+              <button class="options">
+                <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/></div>
+                <p>Flight+Hotel</p>
+              </button>
+              <button class="options">
+                <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
+                <p>Flight+Car</p>
+              </button>
+              <button class="options">
+                <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
+                <p>Flight+Hotel+Car</p>
+              </button>
+              <button class="go">
+                <p>Search</p><img class="arrow" src="./images/arrow.svg" alt=""/>
+              </button>
+              <div class="results">
+                <p>108 results                   </p>
+              </div>
             </div>
           </div>
         </div>
@@ -223,23 +272,57 @@
             <div class="swiper-container-2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="question__content">
+                  <div class="question__content" id="accordion">
                     <h6>What is an e-ticket?</h6>
                     <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
-                  </div>
-                  <div class="question__content">
                     <h6>How to book a ticket?</h6>
-                  </div>
-                  <div class="question__content">
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
                     <h6>How to return an air ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
                   </div>
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                  <div class="question__content" id="accordion-1">
+                    <h6>How early can I book a ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>What payment methods do you have?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>Whwre can Irecieve a ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question__content" id="accordion-2">
+                    <h6>Can I choose a sits when I bye it?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>Can I recieve a discount for a group?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>How mach monney will I loose if I'll turn a ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question__content" id="accordion-3">
+                    <h6>Whwre can Irecieve a ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>How to book a ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>How to return an air ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question__content" id="accordion-4">
+                    <h6>What payment methods do you have?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>Can I recieve a discount for a group?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                    <h6>Whwre can Irecieve a ticket?</h6>
+                    <p>An electronic ticket or an e-ticket is an electronic document that certifies the contract of air transportation between the passenger and the airline. In fact, this is an electronic form of a familiar paper ticket.</p>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -564,7 +647,8 @@
           </div>
         </div>
       </div>
-    </footer><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </footer><script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="./js/remodal.js"></script>

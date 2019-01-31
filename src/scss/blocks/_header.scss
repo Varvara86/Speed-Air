@@ -1,4 +1,7 @@
 .header {
+    // background-image: url(../images/Bunner.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
     padding-top: 20px;
 
     &__logo {
@@ -20,6 +23,7 @@
             font-size: 16px;
             font-weight: 400;
             color: white;
+            white-space: nowrap;
         }
         a {
             font-family: $font-secondary;
@@ -29,6 +33,7 @@
             margin-left: 11px;
             text-decoration: none;
             transition: all 500ms;
+            white-space: nowrap;
 
         }
         a:hover {
