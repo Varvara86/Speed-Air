@@ -5,19 +5,23 @@
                 h2 Like travel deals?
         .row
             .col.col-5
-                p Enter E-mail and we’ll send you best offers
-                .mail_discrip
-                    p Airline discounts
-                    .circle
-                    p The best prices
-                    .circle
-                    p New directions
-                .mail_form
-                    input(type="email" name="#" id="email" required placeholder="E-mail")
-                    button.mail_form__btn Send
-                //- form.form-inline
-                //-     .form-group.mb-2
-                //-         label(for="E-mail2" class="sr-only") E-mail
-                //-         input(type="e-mail" class="form-control" id="E-mail2" placeholder="E-mail")
-                    button(type="submit" class="btn btn-primary mx-sm-3 mb-2") Send
-                p.privacy Your privacy is important to us, so we'll never spam you or share your info with third parties. Take a look at our privacy policy. And, we'd be sad to see you go, but you can unsubscribe at any time.
+                .mail
+                    .mail__offers
+                        p Enter E-mail and we’ll send you best offers
+                    .mail__discrip
+                        p Airline discounts
+                        .circle
+                        p The best prices
+                        .circle
+                        p New directions
+                    .mail__form
+                        input(type="email" name="#" id="email" required placeholder="E-mail")
+                        button.send
+                            p Send
+                            img.arrow(src="./images/arrow.svg", alt="")
+                    //- form.form-inline
+                    //-     .form-group.mb-2
+                    //-         label(for="E-mail2" class="sr-only") E-mail
+                    //-         input(type="e-mail" class="form-control" id="E-mail2" placeholder="E-mail")
+                        button(type="submit" class="btn btn-primary mx-sm-3 mb-2") Send
+                    p.privacy Your privacy is important to us, so we'll never spam you or share your info with third parties. Take a look at our privacy policy. And, we'd be sad to see you go, but you can unsubscribe at any time.

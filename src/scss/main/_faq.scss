@@ -54,7 +54,8 @@
             }
         }
       }
-      .swiper-pagination {
+    .swiper-pagination {
+        text-align: left;
         top: 105%;
       }
       .swiper-pagination-bullet {
@@ -71,6 +72,9 @@
         background: rgba(0,0,0,0.03);
         border: 1px solid white;
         transition: all 300ms;
+      }
+      .swiper-pagination-bullet:hover {
+          background: #cacaca;
       }
       .swiper-pagination-bullet-active {
         color:#4F4F4F;

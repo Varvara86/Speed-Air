@@ -54,9 +54,10 @@
             height: 40px;
             text-decoration: none;
             text-align: center;
-            transition: all 500ms;
+            transition: 0.5s linear;
         }
         .mobile {
+            
             a{
                 margin-left: 30px;
                 align-items: center;
@@ -66,10 +67,11 @@
                 }
             }
             a:hover {
-                color: $color-primary;
-                border-radius: 50%;
-                background-color: $color-secondary;
-                opacity: 0.8;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                i {
+                    color: $color-secondary;
+                }
             }
             
         }
