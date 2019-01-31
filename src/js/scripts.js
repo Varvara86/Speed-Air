@@ -46,3 +46,13 @@ var swiper = new Swiper('.swiper-container', {
       },
   });
  
+  var swiper = new Swiper('.swiper-container-3', {
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+  });
