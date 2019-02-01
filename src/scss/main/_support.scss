@@ -1,0 +1,124 @@
+.support {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: rotateZ(-90deg);
+    z-index: 1000;
+    transform-origin: left top;
+    
+    button {
+        border-radius: 0 0 5px 5px;
+        border: none;
+        background: #0f1f46;
+        box-shadow: 0 0 0 rgba(23, 41, 87, 0.4);
+        font-family: $font-primary;
+        font-size: 16px;
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        transition: linear 0.5s;
+        animation: pulse 2s infinite;
+        a {
+            padding: 10px;
+        }
+    }
+    button:hover {
+        animation: none;
+        background-color: #172f69;
+        color: #007bff;
+        a {
+            text-decoration: none;
+        }
+    }
+    @-webkit-keyframes pulse {
+        0% {
+          -webkit-box-shadow: 0 0 0 0 rgba(23, 41, 87, 0.4);
+        }
+        70% {
+            -webkit-box-shadow: 0 0 0 15px rgba(23, 41, 87, 0);
+        }
+        100% {
+            -webkit-box-shadow: 0 0 0 0 rgba(23, 41, 87, 0);
+        }
+      }
+      @keyframes pulse {
+        0% {
+          -moz-box-shadow: 0 0 0 0 rgba(23, 41, 87, 0.4);
+          box-shadow: 0 0 0 0 rgba(23, 41, 87, 0.4);
+        }
+        70% {
+            -moz-box-shadow: 0 0 0 15px rgba(23, 41, 87, 0);
+            box-shadow: 0 0 0 15px rgba(23, 41, 87, 0);
+        }
+        100% {
+            -moz-box-shadow: 0 0 0 0 rgba(23, 41, 87, 0);
+            box-shadow: 0 0 0 0 rgba(23, 41, 87, 0);
+        }
+    }
+}
+.remodal {
+    .form-group {
+        position: relative;
+
+        .form-control {
+            padding: 25px 30px;
+        }
+        .form-control-placeholder {
+            position: absolute;
+            top: 0;
+            padding: 15px 30px;
+            transition: all 500ms;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+          
+        .form-control:focus + .form-control-placeholder,
+        .form-control:valid + .form-control-placeholder {
+            font-size: 75%;
+            transform: translate3d(0, -25%, 0);
+            opacity: 0.8;
+        }
+    }
+    .tel__form {
+        margin: 5px;
+        margin-top: 25px;
+        font-family: $font-primary;
+        font-size: 14px;
+    }
+    
+    .button {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: $color-secondary;
+        font-family: $font-primary;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 39px;
+        transition: background-color 0.5s;
+        transition: 0.5s linear;
+        cursor: pointer;
+        span {
+            padding-right: 20px;
+            transition: all 500ms;
+        }
+    }
+    
+    .button:hover {
+        background-color: #ffa010;
+        span {
+            padding-right: 60px;
+        }
+    }
+    
+    .button:active {
+        background-color: #f0ae3d;
+        color: #bdbdbd;
+    }
+}

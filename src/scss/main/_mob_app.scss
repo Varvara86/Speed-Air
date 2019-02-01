@@ -47,9 +47,10 @@
         color: $color-secondary;
     }
     .marks {
-
+        justify-content: flex-start;
         &__star {
             display: flex;
+            padding-right: 20px;
         }
     }
     .devices {

@@ -15,10 +15,14 @@
                         .circle
                         p New directions
                     .mail__form
-                        input(type="email" name="#" id="email" required placeholder="E-mail")
+                        .form-group
+                            input.form-control(type="text" id="name" required)
+                            label.form-control-placeholder(for="name") E-mail
                         button.send
                             p Send
                             img.arrow(src="./images/arrow.svg", alt="")
+                        
+						
                     //- form.form-inline
                     //-     .form-group.mb-2
                     //-         label(for="E-mail2" class="sr-only") E-mail

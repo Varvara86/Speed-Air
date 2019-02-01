@@ -129,26 +129,6 @@ var swiper = new Swiper('.swiper-container', {
       },
   });
 
-
-//   swiper = new Swiper(".swiper-container-2", {
-//     effect: 'cube',
-//       grabCursor: true,
-//       cubeEffect: {
-//         shadow: true,
-//         slideShadows: true,
-//         shadowOffset: 20,
-//         shadowScale: 0.94,
-//       },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: !0,
-//         renderBullet: function (e, i) {
-//             return '<span class="' + i + '">' + (e + 1) + "</span>"
-//         }
-//     }
-// })
-
- 
   var swiper = new Swiper('.swiper-container-3', {
     spaceBetween: 30,
     pagination: {

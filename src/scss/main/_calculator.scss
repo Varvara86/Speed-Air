@@ -1,5 +1,6 @@
 .calculator {
     padding-bottom: 195px;
+    padding-top: 40px;
 
     .swiper-container-0 {
         overflow: hidden;
@@ -18,6 +19,7 @@
         }
     }
     .tabs {
+        padding-top: 30px;
         .tabs__caption {
             margin: 0;
             display: flex;
@@ -68,25 +70,73 @@
         padding: 30px 20px;
         font-family: $font-secondary;
         font-weight: 400;
-        color: white;
+        color: black;
         background-color: rgba(23, 41, 87, 0.7);
         justify-content: space-between;
         align-content: space-between;
         display: flex;
         flex-wrap: wrap;
-            
+        -webkit-animation: colorchange 5s infinite alternate;
+
+        
+        
+        
+        .form-group {
+            position: relative;
+
+            .form-control {
+                padding: 10px 30px;
+            }
+            .form-control-placeholder {
+                position: absolute;
+                top: 0;
+                padding: 20px 30px;
+                transition: all 500ms;
+                opacity: 0.5;
+                pointer-events: none;
+            }
+              
+            .form-control:focus + .form-control-placeholder,
+            .form-control:valid + .form-control-placeholder {
+                font-size: 75%;
+                transform: translate3d(0, -30%, 0);
+                opacity: 0.8;
+            }
+            i {
+                position: absolute;
+                top: 32%;
+                right: 20px;
+                font-size: 26px;
+                color: $color-primary;
+            }
+        }
+        
         input {
             height: 62px;
             border-radius: 3px;
-             border: none;
+            border: none;
         }
-        .calendar {
-            display: flex;
-            background-color: #172957;
-        }    
-        .city {
-            // width: 258px;
+        .calendar-group {
+            position: relative;
+
+            .calendar {
+                display: flex;
+                background-color: #172957;
+            }
+            .label {
+                position: absolute;
+                color: white;
+                top: 25%;
+                left: 10%;
+                font-family: $font-primary;
+                font-weight: 300;
+                font-size: 14px;
+            }
+            &:focus .label {
+                display: none;
+            }
         }
+        
         .options {
 
             button {
@@ -96,8 +146,8 @@
                 opacity: 0.8;
                 font-size: $font-size-secondary;
                 padding: 10px;
-                margin-top: 20px;
                 margin-right: 20px;
+                cursor: pointer;
             }
     
             .img {
@@ -131,7 +181,6 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 38px;
-            margin-top: 20px;
             width: 165px;
             transition: all 500ms;
             cursor: pointer;
@@ -146,11 +195,31 @@
             padding: 0 25px;
         }
         .results {
+            display: flex;
+            align-items: center;
             width: 165px;
             text-align: center;
-            margin-top: 38px;
+            margin: 0 !important;
+            color: white;
+            p {
+                margin: 0 auto;
+            }
         }
             
+    }
+    @-webkit-keyframes colorchange {
+        0% {
+            background-color: rgba(23, 41, 87, 0.7);
+        }
+        25% {
+            background-color: rgba(3, 39, 128, 0.7);
+        }
+        50% {
+            background-color: rgba(0, 48, 170, 0.7);
+        }
+        75% {
+            background-color: rgba(11, 48, 139, 0.7);
+        }
     }
     
     .advanced_options {
@@ -160,6 +229,7 @@
         cursor: pointer;
         transition: all 500ms;
         color: white;
+        transition: linear 0.5s;
 
         p {
             font-family: $font-secondary;
@@ -175,10 +245,31 @@
     }
     .advanced_options:hover {
         color: #007bff;
-        border-bottom: 1px solid #fa832e;
         width: 190px;
     }
     .advanced_options__show {
         display: none;
+        
+        .check, .check-1, .check-2, .check-3 {
+            display: flex;
+            margin-top: 20px;
+
+            .checkbox {
+                background-color: rgba(23, 41, 87, 0.7);
+                margin-left: 20px;
+                padding: 20px;
+                border-radius: 3px;
+
+                label {
+                    margin: 0;
+                    color: white;
+                    padding-left: 5px;
+
+                    i {
+                        margin: 5px;
+                    }
+                }
+            }
+        }
     }
 }

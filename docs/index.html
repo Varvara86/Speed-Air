@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="/resources/demos/style.css"/>
+    <link href="./css/remodal/remodal-default-theme.css" rel="stylesheet"/>
+    <link href="./css/remodal/remodal.css" rel="stylesheet"/>
     <link href="./css/swiper.css" rel="stylesheet"/>
     <link href="./css/swiper.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
@@ -49,6 +51,25 @@
         </div>
       </div>
     </header>
+    <div class="support">
+      <button><a href="#modal">Support</a></button>
+    </div>
+    <div class="remodal" data-remodal-id="modal">
+      <button class="remodal-close" data-remodal-action="close"></button>
+      <div class="form-group">
+        <input class="form-control" type="text" id="name" required="required"/>
+        <label class="form-control-placeholder" for="name">Your question</label>
+      </div>
+      <p class="tel__form">Phone format +3 0ХХ ХХХ ХХ ХХ
+        <div class="form-group">
+          <input class="form-control" type="text" id="name" required="required"/>
+          <label class="form-control-placeholder" for="name">Your phone nomber</label>
+        </div>
+      </p>
+      <div class="submit">
+        <button class="button"><span>Call me</span><img class="arrow" src="./images/arrow.svg" alt=""/></button>
+      </div>
+    </div>
     <div class="calculator">
       <div class="container">
         <div class="row">
@@ -85,10 +106,26 @@
         <div class="row">
           <div class="col col-10 offset-1">
             <div class="tabs__content active">
-              <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
-              <input class="city" type="text" id="dynamic-label-input" placeholder="Enter some text"/>
-              <input class="calendar" type="text" id="datepicker"/>
-              <input class="calendar" type="text" id="datepicker-1"/>
+              <div class="form-group">
+                <input class="form-control" type="text" id="name" required="required"/>
+                <label class="form-control-placeholder" for="name">Living from</label><i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" id="name" required="required"/>
+                <label class="form-control-placeholder" for="name">Going to</label><i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="calendar-group">
+                <input class="calendar-control calendar" type="text" id="datepicker"/>
+                <div class="label"><i class="fas fa-calendar-alt"></i>
+                  <label class="calendar-control-placeholder" for="name">Living on</label>
+                </div>
+              </div>
+              <div class="calendar-group">
+                <input class="calendar-control calendar" type="text" id="datepicker-1"/>
+                <div class="label"><i class="fas fa-calendar-alt"></i>
+                  <label class="calendar-control-placeholder" for="name">Returning on</label>
+                </div>
+              </div>
               <div class="options">
                 <button class="active">
                   <div class="img"><img src="./images/002-plane.svg" alt=""/></div>
@@ -124,27 +161,27 @@
               <p>Advanced options</p><img class="arrow" src="./images/arrow.svg" alt=""/>
             </div>
             <div class="advanced_options__show">
-              <button class="options active">
-                <div class="img"><img src="./images/002-plane.svg" alt=""/></div>
-                <p>Flight only</p>
-              </button>
-              <button class="options">
-                <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/></div>
-                <p>Flight+Hotel</p>
-              </button>
-              <button class="options">
-                <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
-                <p>Flight+Car</p>
-              </button>
-              <button class="options">
-                <div class="img"><img src="./images/002-plane.svg" alt=""/><img src="./images/003-hotel.svg" alt=""/><img src="./images/001-car.svg" alt=""/></div>
-                <p>Flight+Hotel+Car</p>
-              </button>
-              <button class="go">
-                <p>Search</p><img class="arrow" src="./images/arrow.svg" alt=""/>
-              </button>
-              <div class="results">
-                <p>108 results                   </p>
+              <div class="check">
+                <div class="checkbox">
+                  <input type="checkbox" name="terms" id="check"/>
+                  <label for="check"><i class="fas fa-utensils"></i><span>Food</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="terms" id="check-1"/>
+                  <label for="check-1"><i class="fas fa-carrot"></i><span>Vegetarian</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="terms" id="check-2"/>
+                  <label for="check-2"><i class="fas fa-baby"></i><span>Baby sit</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="terms" id="check-3"/>
+                  <label for="check-3"><i class="fas fa-wine-glass-alt"></i><span>Alcohol</span></label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="terms" id="check-4"/>
+                  <label for="check-4"><i class="fas fa-couch"></i><span>Seats</span></label>
+                </div>
               </div>
             </div>
           </div>
@@ -164,7 +201,7 @@
               <div class="country">
                 <div class="country__discr">
                   <h1>Italy</h1>
-                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="http://">more</a>
+                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="javascript:void(0)">more</a>
                 </div><img src="./images/Italy.jpg" alt=""/>
               </div>
             </div>
@@ -174,7 +211,7 @@
               <div class="country">
                 <div class="country__discr">
                   <h1>France</h1>
-                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="http://">more</a>
+                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="javascript:void(0)">more</a>
                 </div><img src="./images/France.jpg" alt=""/>
               </div>
             </div>
@@ -184,7 +221,7 @@
               <div class="country">
                 <div class="country__discr">
                   <h1>Germany</h1>
-                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="http://">more</a>
+                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="javascript:void(0)">more</a>
                 </div><img src="./images/Germany.jpg" alt=""/>
               </div>
             </div>
@@ -194,7 +231,7 @@
               <div class="country">
                 <div class="country__discr">
                   <h1>Greece</h1>
-                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="http://">more</a>
+                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="javascript:void(0)">more</a>
                 </div><img src="./images/Greece.jpg" alt=""/>
               </div>
             </div>
@@ -204,7 +241,7 @@
               <div class="country">
                 <div class="country__discr">
                   <h1>Egypt</h1>
-                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="http://">more</a>
+                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="javascript:void(0)">more</a>
                 </div><img src="./images/Egypt.jpg" alt=""/>
               </div>
             </div>
@@ -214,7 +251,7 @@
               <div class="country">
                 <div class="country__discr">
                   <h1>Maldives</h1>
-                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="http://">more</a>
+                  <p>Probably, it is difficult to find a person who knows nothing about Italy. Artists, architects and writers sang, marveling at their beauty and diversity. Here come to see the work of...</p><a href="javascript:void(0)">more</a>
                 </div><img src="./images/Maldives.jpg" alt=""/>
               </div>
             </div>
@@ -237,16 +274,16 @@
           <div class="col col-12">
             <div class="swiper-container-1"> 
               <div class="swiper-wrapper"> 
-                <div class="swiper-slide"><img src="./images/Airport_directory.jpg" alt=""/><a class="discr" href="http://">
+                <div class="swiper-slide"><img src="./images/Airport_directory.jpg" alt=""/><a class="discr" href="javascript:void(0)">
                     <h2>Airports directory</h2>
                     <p>All world airports</p></a></div>
-                <div class="swiper-slide"><img src="./images/Chip_Flights.jpg" alt=""/><a class="discr" href="http://">
+                <div class="swiper-slide"><img src="./images/Chip_Flights.jpg" alt=""/><a class="discr" href="javascript:void(0)">
                     <h2>Chip flights</h2>
                     <p>Dynamics of prices for air travel</p></a></div>
-                <div class="swiper-slide"><img src="./images/Helping_Travelers.jpg" alt=""/><a class="discr" href="http://">
+                <div class="swiper-slide"><img src="./images/Helping_Travelers.jpg" alt=""/><a class="discr" href="javascript:void(0)">
                     <h2>Helping travelers</h2>
                     <p>Maps of places to visit</p></a></div>
-                <div class="swiper-slide"><img src="./images/Most_popular.jpg" alt=""/><a class="discr" href="http://">
+                <div class="swiper-slide"><img src="./images/Most_popular.jpg" alt=""/><a class="discr" href="javascript:void(0)">
                     <h2>Most popular</h2>
                     <p>Countries and places of interest</p></a></div>
               </div>
@@ -340,20 +377,12 @@
             </div>
             <div class="marks">
               <div class="marks__star"><img src="./images/star.svg" alt=""/><img src="./images/star.svg" alt=""/><img src="./images/star.svg" alt=""/><img src="./images/star.svg" alt=""/><img src="./images/half_star.svg" alt=""/></div>
-              <p>More then 103 000 marks</p><a class="marks__lieve" href="#modal">Lieve mark!</a>
+              <p>More then 103 000 marks</p>
             </div>
-            <div class="devices"><a class="devices__element" href="http://"><i class="fab fa-apple"></i>
-                <p>iPhone or iPad</p></a><a class="devices__element" href="http://"><i class="fab fa-android"></i>
-                <p>Android</p></a><a class="devices__element" href="http://"><i class="fab fa-windows"></i>
+            <div class="devices"><a class="devices__element" href="javascript:void(0)"><i class="fab fa-apple"></i>
+                <p>iPhone or iPad</p></a><a class="devices__element" href="javascript:void(0)"><i class="fab fa-android"></i>
+                <p>Android</p></a><a class="devices__element" href="javascript:void(0)"><i class="fab fa-windows"></i>
                 <p>Windows Phone</p></a></div>
-          </div>
-        </div>
-        <div class="remodal" data-remodal-id="modal">
-          <button class="remodal-close" data-remodal-action="close"></button>
-          <input class="form__name" type="text" name="#" id="name" required="required" placeholder="Имя"/>
-          <p><span class="tel__form">Телефон в формате 8 0ХХ ХХХ ХХ ХХ</span></p>
-          <div class="submit">
-            <button class="button"><span>Хочу</span></button>
           </div>
         </div>
       </div>
@@ -362,22 +391,22 @@
       <div class="container">
         <div class="row">
           <div class="col col-6">
-            <h3>Our advantages</h3><a class="advance" href="#">
+            <h3>Our advantages</h3><a class="advance" href="javascript:void(0)">
               <div class="advance__img"><img src="./images/bag.svg" alt=""/></div>
               <div class="advance__txt">
                 <h6>The largest portfolio of travel services</h6>
                 <p>The site has everything you need to organize any trip. You can buy tickets, book a hotel, purchase insurance, book a transfer or rent a car. Book online, save time and money.</p>
-              </div></a><a class="advance" href="#">
+              </div></a><a class="advance" href="javascript:void(0)">
               <div class="advance__img"><img src="./images/call.svg" alt=""/></div>
               <div class="advance__txt">
                 <h6>Customer support at all stages of the purchase</h6>
                 <p>24 hours a day, 7 days a week, we are ready to advise you on all issues related to the purchase of air tickets and other services on the website. Our operators will answer you in English, Russian and German.</p>
-              </div></a><a class="advance" href="#">
+              </div></a><a class="advance" href="javascript:void(0)">
               <div class="advance__img"><img src="./images/T.svg" alt=""/></div>
               <div class="advance__txt">
                 <h6>Loyalty program for regular customers</h6>
                 <p>Become a member of the Bonus Program and accumulate bonuses, buying even cheap air tickets. With each purchase, you earn bonuses that you can pay for new tickets.</p>
-              </div></a><a class="advance" href="#">
+              </div></a><a class="advance" href="javascript:void(0)">
               <div class="advance__img"><img src="./images/label.svg" alt=""/></div>
               <div class="advance__txt">
                 <h6>Chip flights</h6>
@@ -400,7 +429,7 @@
                           <p>22, Mar, 2018</p>
                         </div>
                         <p>Have a wonderful week of honeymoon. This hotel is only for those over 16 years old. All very ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo2.jpg" alt=""/>
@@ -412,7 +441,7 @@
                           <p>03, Apr, 2018</p>
                         </div>
                         <p>The first impression from Coraya is an absolutely European level of service. The staff is well-trained ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo3.jpg" alt=""/>
@@ -424,7 +453,7 @@
                           <p>06, Apr, 2018</p>
                         </div>
                         <p>I had many prejudices and doubts about whether to go to Egypt in general, but the interest to see the ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -438,7 +467,7 @@
                           <p>22, Mar, 2018</p>
                         </div>
                         <p>Have a wonderful week of honeymoon. This hotel is only for those over 16 years old. All very ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo2.jpg" alt=""/>
@@ -450,7 +479,7 @@
                           <p>03, Apr, 2018</p>
                         </div>
                         <p>The first impression from Coraya is an absolutely European level of service. The staff is well-trained ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo3.jpg" alt=""/>
@@ -462,7 +491,7 @@
                           <p>06, Apr, 2018</p>
                         </div>
                         <p>I had many prejudices and doubts about whether to go to Egypt in general, but the interest to see the ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -476,7 +505,7 @@
                           <p>22, Mar, 2018</p>
                         </div>
                         <p>Have a wonderful week of honeymoon. This hotel is only for those over 16 years old. All very ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo2.jpg" alt=""/>
@@ -488,7 +517,7 @@
                           <p>03, Apr, 2018</p>
                         </div>
                         <p>The first impression from Coraya is an absolutely European level of service. The staff is well-trained ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo3.jpg" alt=""/>
@@ -500,7 +529,7 @@
                           <p>06, Apr, 2018</p>
                         </div>
                         <p>I had many prejudices and doubts about whether to go to Egypt in general, but the interest to see the ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -514,7 +543,7 @@
                           <p>22, Mar, 2018</p>
                         </div>
                         <p>Have a wonderful week of honeymoon. This hotel is only for those over 16 years old. All very ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo2.jpg" alt=""/>
@@ -526,7 +555,7 @@
                           <p>03, Apr, 2018</p>
                         </div>
                         <p>The first impression from Coraya is an absolutely European level of service. The staff is well-trained ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                     <div class="reviev">
                       <div class="reviev__person"><img src="./images/photo3.jpg" alt=""/>
@@ -538,7 +567,7 @@
                           <p>06, Apr, 2018</p>
                         </div>
                         <p>I had many prejudices and doubts about whether to go to Egypt in general, but the interest to see the ...</p>
-                      </div><a href="http://">more</a>
+                      </div><a href="javascript:void(0)">more</a>
                     </div>
                   </div>
                 </div>
@@ -570,7 +599,10 @@
                 <p>New directions</p>
               </div>
               <div class="mail__form">
-                <input type="email" name="#" id="email" required="required" placeholder="E-mail"/>
+                <div class="form-group">
+                  <input class="form-control" type="text" id="name" required="required"/>
+                  <label class="form-control-placeholder" for="name">E-mail</label>
+                </div>
                 <button class="send">
                   <p>Send</p><img class="arrow" src="./images/arrow.svg" alt=""/>
                 </button>
@@ -586,12 +618,12 @@
         <div class="row">
           <div class="col col-10 offset-1">
             <ul class="nav justify-content-between footer__nav">
-              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">My ticket</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Cooperation</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Servises</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Account</a></li>
+              <li class="nav-item"><a class="nav-link" href="javascript:void(0)">My ticket</a></li>
+              <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Support</a></li>
+              <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Cooperation</a></li>
+              <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Servises</a></li>
+              <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -601,35 +633,35 @@
             <div class="d-flex justify-content-between footer__card">
               <ul class="nav flex-column">
                 <p class="nav__head">Most popular</p>
-                <li class="nav-item"><a class="nav-link" href="#">Countries</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Regions</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cities</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Places of interest</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Countries</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Regions</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Cities</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Hotels</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Places of interest</a></li>
               </ul>
               <ul class="nav flex-column">
                 <p class="nav__head">Special offers</p>
-                <li class="nav-item"><a class="nav-link" href="#">Holiday rentals</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Order child support</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Food</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Charter services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Freight transportation</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Holiday rentals</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Order child support</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Food</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Charter services</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Freight transportation</a></li>
               </ul>
               <ul class="nav flex-column">
                 <p class="nav__head">About us</p>
-                <li class="nav-item"><a class="nav-link" href="#">Who we are</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">General conditions</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Privacy policy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cookies policy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Press area</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Who we are</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">General conditions</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Privacy policy</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Cookies policy</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Press area</a></li>
               </ul>
               <ul class="nav flex-column">
                 <p class="nav__head">Useful information</p>
-                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Airline information</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cheap car hire</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Top flight destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Contact us</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Airline information</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Cheap car hire</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Top flight destinations</a></li>
               </ul>
             </div>
           </div>
@@ -638,10 +670,10 @@
           <div class="col col-10 offset-1">
             <div class="footer__info">
               <div class="mobile d-flex align-items-center">
-                <p>Download mobile app</p><a href="http://"><i class="fab fa-apple"></i></a><a href="http://"><i class="fab fa-android"></i></a><a href="http://"><i class="fab fa-windows"></i></a>
+                <p>Download mobile app</p><a href="javascript:void(0)"><i class="fab fa-apple"></i></a><a href="javascript:void(0)"><i class="fab fa-android"></i></a><a href="javascript:void(0)"><i class="fab fa-windows"></i></a>
               </div>
               <div class="social d-flex align-items-center">
-                <p>Look for us</p><a href="http://"><i class="fab fa-viber"></i></a><a href="http://"><i class="fab fa-instagram"></i></a><a href="http://"><i class="fab fa-facebook-f"></i></a><a href="http://"><i class="fab fa-twitter"></i></a>
+                <p>Look for us</p><a href="javascript:void(0)"><i class="fab fa-viber"></i></a><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
               </div>
             </div>
           </div>
@@ -649,7 +681,7 @@
         <hr/>
         <div class="row">
           <div class="col col-12">
-            <p class="footer__rights"><span>&#169; 2018 </span><span class="footer__rights--logo"><a href="">speed air </a></span><span>of Harrogate Ltd. All Rights Reserved.</span></p>
+            <p class="footer__rights"><span>&#169; 2018 </span><span class="footer__rights--logo"><a href="javascript:void(0)">speed air </a></span><span>of Harrogate Ltd. All Rights Reserved.</span></p>
           </div>
         </div>
       </div>
